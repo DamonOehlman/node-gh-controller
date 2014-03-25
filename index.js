@@ -4,22 +4,17 @@
 var HID = require('node-hid');
 var extend = require('cog/extend');
 var pluck = require('whisk/pluck');
-
-// create the cameras list
-// this provides the vendor & product id combinations for various
-// cameras
 var controllers = [
   { name: 'PS3', vendorId: 0x12ba, productId: 0x0100 }
 ];
 /**
-  # confcam
+  # gh-controller
 
-  This is a node module for interfacing with the Logitech BCC950 pan, tilt
-  and zoom controls via USB.
+  This is a node module for interfacing with a Guitar Hero wireless controller
+  using the [node-hid](https://github.com/node-hid/node-hid) module to
+  interface with the device.
 
-  ## Example Usage
-
-  <<< examples/control.js
+  Tested with the PS3 controller on Linux.
 
 **/
 
