@@ -1,0 +1,13 @@
+# 999-redoctane.rules
+
+ACTION!="add", GOTO="redoctane_end"
+SUBSYSTEM=="usb_device", GOTO="redoctane_start"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GOTO="redoctane_start"
+GOTO="redoctane_end"
+
+LABEL="redoctane_start"
+
+# PS3
+ATTR{idVendor}=="12ba", ATTR{idProduct}=="0100", MODE="666"
+
+LABEL="redoctane_end"
