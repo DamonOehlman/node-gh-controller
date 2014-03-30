@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/DamonOehlman/node-gh-controller",
   "dependencies": {
-    "node-hid": "^0.3.1",
-    "whisk": "^0.5.0",
-    "cog": "^0.5.2"
+    "pull-hid": "0.0.0",
+    "pull-stream": "^2.21.0"
   }
 }
